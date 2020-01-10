@@ -2,15 +2,17 @@
 
 I was so tickled by the [InsultAPI](https://github.com/ncitron/insultAPI) developed
 by [ncitron](https://github.com/ncitron) that I thought I'd give it a Go (pun intended)
-and implement with Web Assembly and WASM. It's a relatively simple application
-because it randomly selects an insult from a list and returns it to the browser,
+and implement with [Web Assembly and WASM](https://vsoch.github.io/insult-go/). 
+It's a relatively simple application because it randomly selects an insult from a list and returns it to the browser,
 and if you've selected to randomize, it will generate by selecting two adjectives and
 a noun randomly.
 
-![img/insult.png](img/insult.png)
+[![img/insult.png](img/insult.png)](https://vsoch.github.io/insult-go/)
 
 Unlike it's previous art, the goal isn't to provide an API, but a simple interface
 for generating insults (and copy pasting them wherever they are needed!)
+
+Check out the interface [here](https://vsoch.github.io/insult-go/)!
 
 ## Usage
 
