@@ -1,0 +1,180 @@
+body {
+  /* bwaaahahha this color... */
+  background: blueviolet;
+}
+
+.container {
+  margin-top:100px;
+}
+
+#insult {
+  color: white;
+}
+
+.left-side {
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.right-side {
+    background-color: indigo;
+    border-radius: 30px;
+    padding: 30px;
+    margin-left: 20px;
+    word-wrap: break-word;
+}
+
+.label, .form input, .form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  outline-style: none;
+  outline-color: transparent;
+  background-color: transparent;
+  fill: transparent;
+  border: none;
+  margin: 0;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+    background: transparent;
+  }
+}
+
+.form input:-webkit-autofill,
+.form textarea:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+}
+.form input:-moz-placeholder,
+.form textarea:-moz-placeholder {
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  font-weight: 400;
+}
+.form input::-moz-placeholder,
+.form textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  font-weight: 400;
+}
+.form input:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+}
+.form input::-ms-input-placeholder,
+.form textarea::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+}
+
+.form textarea {
+  min-height: 50px;
+  max-height: 300px;
+  height: auto;
+  display: inline-block;
+  resize: none;
+  padding: 10px 0;
+}
+
+.form input[type="submit"] {
+  width: auto;
+  padding: 0 40px;
+  margin: 20px;
+  font-weight: 400;
+  box-shadow: inset 0 0 0 2px rgba(255 ,255 ,255 , 1);
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.form input[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(105, 60, 150, 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.form input[type="submit"]:focus {
+  box-shadow: inset 0 0 0 2px rgba(255 ,255 ,255 , 1), 0 0 10px 0 rgba(255 ,255 ,255 , 0.4);
+}
+
+.form label {
+    padding-top: 13px;
+    font-size: 16px;
+    color: white;
+    padding-left:15px;
+}
+
+.form input,
+.form textarea {
+  margin: 20px 0 0 0;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 1);
+}
+
+.field {
+  position: relative;
+}
+
+.field input[type="text"]:focus ~ label,
+.field input[type="email"]:focus ~ label,
+.field textarea:focus ~ label,
+.field input[type="text"]:valid ~ label,
+.field input[type="email"]:valid ~ label,
+.field textarea:valid ~ label,
+.field input:not([value=""]) ~ label,
+.field textarea:not([value=""]) ~ label {
+  top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  transition: all 0.2s ease-in-out, color 0s;
+}
+
+.field input[type="text"]:focus ~ label,
+.field input[type="email"]:focus ~ label,
+.field textarea:focus ~ label {
+  color: rgba(255, 255, 255, 1);
+}
+
+.field input[type="text"]:valid ~ label,
+.field input[type="email"]:valid ~ label,
+.field textarea:valid ~ label {
+  color: rgba(20, 200, 200, 1);
+}
+
+.field input[type="text"]:not(:focus):invalid ~ label,
+.field input[type="email"]:not(:focus):invalid ~ label,
+.field textarea:not(:focus):invalid ~ label {
+  color: rgba(230 ,190 ,50 , 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.field input:focus,
+.field textarea:focus {
+  box-shadow: inset 0 -2px 0 0 rgba(255 ,255 ,255 , 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.field input:valid,
+.field textarea:valid {
+  box-shadow: inset 0 -2px 0 0 rgba(20, 200, 200, 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.field input[value=""]:not(:focus):invalid,
+.field textarea[value=""]:not(:focus):invalid {
+  box-shadow: inset 0 -2px 0 0 rgba(255 ,255 ,255 , 0.6);
+  transition: all 0.2s ease-in-out;
+}
